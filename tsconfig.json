@@ -1,20 +1,11 @@
 {
   "compilerOptions": {
-    "target": "ESNext", // 生成的 JS 代码使用 ESNext 特性
-    "module": "NodeNext", // 使用 Node.js 的 ESM 模块解析
-    "rootDir": "./src", // TypeScript 源码的根目录
-    "outDir": "./dist", // 编译后的文件输出目录
-    "esModuleInterop": true, // 允许 CommonJS 与 ES 模块兼容
-    "forceConsistentCasingInFileNames": true, // 强制文件名一致性
-    "strict": true, // 启用严格类型检查
-    "skipLibCheck": true, // 跳过库文件的类型检查
-    "moduleResolution": "nodenext", // Node.js ESM 模块解析
-    "resolveJsonModule": true, // 允许导入 JSON 文件
-    "allowSyntheticDefaultImports": true // 允许默认导入
-  },
-  "ts-node": {
-    "esm": true // 启用 ESM 支持
-  },
-  "include": ["src/**/*"], // 包含所有 src 目录下的 TypeScript 文件
-  "exclude": ["node_modules"] // 排除 node_modules 目录
+    "target": "ESNext",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "NodeNext",                                /* Specify what module code is generated. */
+    "outDir": "./dist",                                   /* Specify an output folder for all emitted files. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  }
 }
